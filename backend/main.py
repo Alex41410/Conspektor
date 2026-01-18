@@ -69,10 +69,10 @@ async def startup_event():
     lm_available = check_port(config.get("lm_studio_port", 1234))
     
     if not lm_available:
-        print(f"⚠️  LM Studio не доступен на порту {config.get('lm_studio_port', 1234)}")
+        print(f"[WARNING] LM Studio не доступен на порту {config.get('lm_studio_port', 1234)}")
         print("   Убедитесь, что LM Studio запущен и локальный сервер активен")
     else:
-        print(f"✓ LM Studio доступен на порту {config.get('lm_studio_port', 1234)}")
+        print(f"[OK] LM Studio доступен на порту {config.get('lm_studio_port', 1234)}")
 
 @app.get("/")
 async def root():
