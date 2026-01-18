@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+*.pdf
+*.docx
+*.md
+!README.md
+source_text.txt
+chapters_info.json
+generation_log.md
